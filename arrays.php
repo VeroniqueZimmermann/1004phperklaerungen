@@ -33,12 +33,12 @@ echo "<br><br><hr><br>";
 
 //assoziatives Arrays   index aus string oder character
 
-$ass = array("Montag" => "Einstieg in die Woche",
+$assoziativ = array("Montag" => "Einstieg in die Woche",
              "Dienstag" => "Zweistieg in die Woche",
              "Mittwoch" => "Halbzeit");
 
-print_r($ass);
-echo "<br> Also am Dienstag:" .$ass["Dienstag"];
+print_r($assoziativ);
+echo "<br> Also am Dienstag:" .$assoziativ["Dienstag"];
 
 echo "<hr>";
 
