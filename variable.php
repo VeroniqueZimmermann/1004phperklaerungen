@@ -22,7 +22,7 @@ function anzeigeMitGlobals()
     echo '<h4 style="color: rgb('.$GLOBALS['red'].','.$GLOBALS['green'].','.$GLOBALS['blue'].')">In der Funktion mit den Globals: Hallo "'.$GLOBALS['ausserhalb'].'"</h4>';
 }
 
-function anzeigeGLOBAL()
+function anzeigeGLOBAL()	// nochmal vereinfacht
 {
     GLOBAL $ausserhalb;
     $ausserhalb = "Funktionsmitarbeiter";
