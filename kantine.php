@@ -33,8 +33,8 @@ $essen = array(
     "Freitag" => array(
                     "Frühstück" => "Banane",
                     "Mittag" => array("Vorspeise" => "Suppe", 
-                                        "Haupt" => "Extra extra Fleisch", 
-                                        "Nachspeise" => "Gummibärli"),
+                                        "Haupt" => array("extra fleischig","Extra extra Fleisch","Gemüse fad"), 
+                                        "Nachspeise" => array("Gummibärli","Kuchen","Obst")),
                     "Nachmittag" => "Brotzeit")
                     );
 
@@ -62,8 +62,8 @@ echo "<tr><td>Mittag</td>";
 foreach($essen as $wochentag)
 {
     echo "<td><ul>"."<li>".$wochentag['Mittag']['Vorspeise']."</li></ul>
-        <ul><li>".$wochentag['Mittag']['Haupt']."</li></ul>
-        <ul><li>".$wochentag['Mittag']['Nachspeise']."</li></ul>
+        <ul><li>".$wochentag['Mittag']['Haupt'][0]."</li><li>".$wochentag['Mittag']['Haupt'][1]."</li><li>".$wochentag['Mittag']['Haupt'][2]."</li></ul>
+        <ul><li>".$wochentag['Mittag']['Nachspeise'][0]."</li><li>".$wochentag['Mittag']['Nachspeise'][1]."</li><li>".$wochentag['Mittag']['Nachspeise'][2]."</li></ul>
         </td>";
 }
 echo "</tr>";
